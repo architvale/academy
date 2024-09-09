@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CourseCard = async ({ course }: { course: Course }) => {
-  const instructor = await clerkClient.users.getUser(course.instructorId);
+  const instructor = await clerkClient.users.getUser(course.instructorId).catch(() => null);
 
   let level;
 
