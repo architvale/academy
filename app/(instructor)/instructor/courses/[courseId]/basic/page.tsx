@@ -57,6 +57,7 @@ const CourseBasics = async ({ params }: { params: { courseId: string } }) => {
         isCompleted={isCompleted}
         missingFieldsCount={missingFieldsCount}
         requiredFieldsCount={requiredFieldsCount}
+        page=""
       />
       <EditCourseForm
         course={course}
